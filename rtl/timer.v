@@ -8,7 +8,7 @@ module timer(
     input [4:0]target_count,
     
     //OUTPUT
-    output timer_done,
+    output timer_done
 );
 reg [4:0]count; 
 
