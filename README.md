@@ -28,21 +28,37 @@ The design also supports:
 - Modular RTL design
 - Verilog HDL implementation
 
-## Project Status
+## Developement Flow 
 
 🚧 This project is currently under development.
 
-Current Progress:
-- [x] Requirement Analysis
-- [x] Input/Output Definition
-- [x] State Definition
-- [x] State Encoding
-- [x] FSM Design
-- [ ] RTL Implementation
-- [ ] Testbench Development
-- [ ] Functional Simulation
-- [ ] Documentation
-- [ ] Future Enhancements
+|  Phase | Module / Task                        | Concepts Covered                             | Status |
+| :----: | ------------------------------------ | -------------------------------------------- | :----: |
+|  **1** | Project Requirement Analysis         | Understanding Specifications                 |    DONE   |
+|  **2** | Traffic Signal Timing Analysis       | Real-world Traffic Logic                     |    DONE   |
+|  **3** | FSM Fundamentals                     | Moore vs Mealy FSM                           |    DONE   |
+|  **4** | Define Inputs, Outputs & Constraints | System Specification                         |    DONE   |
+|  **5** | State Identification                 | State Decomposition                          |    DONE   |
+|  **6** | State Encoding                       | Binary Encoding, Parameters                  |    DONE   |
+|  **7** | **State Diagram Design**             | FSM Visualization                            |    DONE   |
+|  **8** | **State Transition Table**           | Present State → Next State                   |    DONE   |
+|  **9** | **Output Truth Table**               | State → Traffic Light Mapping                |    DONE   |
+| **10** | Overall RTL Architecture             | Block Diagram & Data Flow                    |    DONE   |
+| **11** | Timer Module Design                  | Counter Design                               |    DONE   |
+| **12** | Timer Testbench                      | Independent Verification                     |    DONE   |
+| **13** | State Register Design                | Sequential Logic, D Flip-Flops               |    ⬜   |
+| **14** | State Register Testbench             | State Storage Verification                   |    ⬜   |
+| **15** | Next-State Logic                     | Combinational FSM Logic                      |    ⬜   |
+| **16** | Output Logic                         | Moore Output Decoder                         |    ⬜   |
+| **17** | Emergency Priority Logic             | Priority Decision Logic                      |    ⬜   |
+| **18** | Pedestrian Request Logic             | Request Handling                             |    ⬜   |
+| **19** | Top Module Integration               | RTL Integration                              |    ⬜   |
+| **20** | Complete Testbench                   | Functional Verification                      |    ⬜   |
+| **21** | Waveform Analysis                    | GTKWave Debugging                            |    ⬜   |
+| **22** | Corner Case Testing                  | Reset, Multiple Requests, Timing             |    ⬜   |
+| **23** | Documentation                        | State Diagram, Timing Diagram, Block Diagram |    ⬜   |
+| **24** | GitHub Repository                    | README, Project Structure                    |    ⬜   |
+| **25** | LinkedIn Project Post                | Portfolio Showcase                           |    ⬜   |
 
 ## Directory Structure
 
