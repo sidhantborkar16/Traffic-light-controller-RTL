@@ -46,8 +46,8 @@ The design also supports:
 | **10** | Overall RTL Architecture             | Block Diagram & Data Flow                    |    DONE   |
 | **11** | Timer Module Design                  | Counter Design                               |    DONE   |
 | **12** | Timer Testbench                      | Independent Verification                     |    DONE   |
-| **13** | State Register Design                | Sequential Logic, D Flip-Flops               |    ⬜   |
-| **14** | State Register Testbench             | State Storage Verification                   |    ⬜   |
+| **13** | State Register Design                | Sequential Logic, D Flip-Flops               |    DONE   |
+| **14** | State Register Testbench             | State Storage Verification                   |    DONE   |
 | **15** | Next-State Logic                     | Combinational FSM Logic                      |    ⬜   |
 | **16** | Output Logic                         | Moore Output Decoder                         |    ⬜   |
 | **17** | Emergency Priority Logic             | Priority Decision Logic                      |    ⬜   |
