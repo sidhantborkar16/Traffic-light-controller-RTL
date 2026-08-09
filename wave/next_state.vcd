@@ -1,0 +1,122 @@
+$date
+	Sun Aug 09 14:13:16 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module next_state_tb $end
+$var wire 4 ! next_state [3:0] $end
+$var parameter 4 " S0 $end
+$var parameter 4 # S1 $end
+$var parameter 4 $ S2 $end
+$var parameter 4 % S3 $end
+$var parameter 4 & S4 $end
+$var parameter 4 ' S5 $end
+$var parameter 4 ( S6 $end
+$var parameter 4 ) S7 $end
+$var parameter 4 * S8 $end
+$var parameter 4 + S9 $end
+$var reg 4 , current_state [3:0] $end
+$var reg 1 - emergency_req_EW $end
+$var reg 1 . emergency_req_NS $end
+$var reg 1 / ped_req_EW $end
+$var reg 1 0 ped_req_NS $end
+$var reg 1 1 timer_done $end
+$scope module dut $end
+$var wire 4 2 current_state [3:0] $end
+$var wire 1 - emergency_req_EW $end
+$var wire 1 . emergency_req_NS $end
+$var wire 1 / ped_req_EW $end
+$var wire 1 0 ped_req_NS $end
+$var wire 1 1 timer_done $end
+$var parameter 4 3 S0 $end
+$var parameter 4 4 S1 $end
+$var parameter 4 5 S2 $end
+$var parameter 4 6 S3 $end
+$var parameter 4 7 S4 $end
+$var parameter 4 8 S5 $end
+$var parameter 4 9 S6 $end
+$var parameter 4 : S7 $end
+$var parameter 4 ; S8 $end
+$var parameter 4 < S9 $end
+$var reg 4 = next_state [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1001 <
+b1000 ;
+b111 :
+b110 9
+b101 8
+b100 7
+b11 6
+b10 5
+b1 4
+b0 3
+b1001 +
+b1000 *
+b111 )
+b110 (
+b101 '
+b100 &
+b11 %
+b10 $
+b1 #
+b0 "
+$end
+#0
+$dumpvars
+b1001 =
+b0 2
+01
+00
+0/
+0.
+1-
+b0 ,
+b1001 !
+$end
+#10000
+b100 !
+b100 =
+1.
+0-
+#20000
+b10 !
+b10 =
+10
+0.
+11
+b1 ,
+b1 2
+#30000
+b11 !
+b11 =
+b10 ,
+b10 2
+#40000
+b0 !
+b0 =
+00
+b111 ,
+b111 2
+#50000
+b100 ,
+b100 2
+#60000
+b110 !
+b110 =
+01
+b110 ,
+b110 2
+#70000
+b1001 !
+b1001 =
+b1001 ,
+b1001 2
+#80000
