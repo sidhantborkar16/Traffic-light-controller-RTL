@@ -1,0 +1,170 @@
+$date
+	Mon Aug 10 15:57:16 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module output_logic_tb $end
+$var wire 1 ! walk_NS $end
+$var wire 1 " walk_EW $end
+$var wire 1 # dont_walk_NS $end
+$var wire 1 $ dont_walk_EW $end
+$var wire 1 % NS_yellow $end
+$var wire 1 & NS_red $end
+$var wire 1 ' NS_Green $end
+$var wire 1 ( EW_yellow $end
+$var wire 1 ) EW_red $end
+$var wire 1 * EW_Green $end
+$var parameter 4 + S0 $end
+$var parameter 4 , S1 $end
+$var parameter 4 - S2 $end
+$var parameter 4 . S3 $end
+$var parameter 4 / S4 $end
+$var parameter 4 0 S5 $end
+$var parameter 4 1 S6 $end
+$var parameter 4 2 S7 $end
+$var parameter 4 3 S8 $end
+$var parameter 4 4 S9 $end
+$var reg 4 5 current_state [3:0] $end
+$scope module dut $end
+$var wire 4 6 current_state [3:0] $end
+$var parameter 4 7 S0 $end
+$var parameter 4 8 S1 $end
+$var parameter 4 9 S2 $end
+$var parameter 4 : S3 $end
+$var parameter 4 ; S4 $end
+$var parameter 4 < S5 $end
+$var parameter 4 = S6 $end
+$var parameter 4 > S7 $end
+$var parameter 4 ? S8 $end
+$var parameter 4 @ S9 $end
+$var reg 1 * EW_Green $end
+$var reg 1 ) EW_red $end
+$var reg 1 ( EW_yellow $end
+$var reg 1 ' NS_Green $end
+$var reg 1 & NS_red $end
+$var reg 1 % NS_yellow $end
+$var reg 1 $ dont_walk_EW $end
+$var reg 1 # dont_walk_NS $end
+$var reg 1 " walk_EW $end
+$var reg 1 ! walk_NS $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1001 @
+b1000 ?
+b111 >
+b110 =
+b101 <
+b100 ;
+b11 :
+b10 9
+b1 8
+b0 7
+b1001 4
+b1000 3
+b111 2
+b110 1
+b101 0
+b100 /
+b11 .
+b10 -
+b1 ,
+b0 +
+$end
+#0
+$dumpvars
+b0 6
+b0 5
+0*
+1)
+0(
+1'
+0&
+0%
+1$
+1#
+0"
+0!
+$end
+#10000
+1%
+1$
+1#
+1)
+0'
+b1 5
+b1 6
+#20000
+1&
+1$
+1#
+1)
+0%
+b10 5
+b10 6
+#30000
+1!
+1$
+0#
+1)
+1&
+b11 5
+b11 6
+#40000
+1#
+1'
+1$
+0!
+1)
+0&
+b100 5
+b100 6
+#50000
+1*
+1&
+1$
+1#
+0)
+0'
+b101 5
+b101 6
+#60000
+1(
+1$
+1#
+0*
+1&
+b110 5
+b110 6
+#70000
+1)
+1$
+1#
+0(
+1&
+b111 5
+b111 6
+#80000
+1"
+0$
+1#
+1)
+1&
+b1000 5
+b1000 6
+#90000
+1$
+1*
+0"
+1#
+0)
+1&
+b1001 5
+b1001 6
+#100000
