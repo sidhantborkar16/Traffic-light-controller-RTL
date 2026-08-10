@@ -2,6 +2,8 @@
 
 A Verilog-based RTL implementation of a Traffic Light Controller using a Moore Finite State Machine (FSM). This project is being developed in a structured, phase-by-phase approach, covering the complete RTL design flow from requirement analysis to verification.
 
+Note : This project is currently under developement and finish soon so this is not a final Readme file there are many changes are done in the architecture while developement.
+
 ## Project Overview
 
 The Traffic Light Controller manages two intersecting roads:
