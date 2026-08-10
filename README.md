@@ -48,10 +48,10 @@ The design also supports:
 | **12** | Timer Testbench                      | Independent Verification                     |    DONE   |
 | **13** | State Register Design                | Sequential Logic, D Flip-Flops               |    DONE   |
 | **14** | State Register Testbench             | State Storage Verification                   |    DONE   |
-| **15** | Next-State Logic                     | Combinational FSM Logic                      |    ⬜   |
-| **16** | Output Logic                         | Moore Output Decoder                         |    ⬜   |
-| **17** | Emergency Priority Logic             | Priority Decision Logic                      |    ⬜   |
-| **18** | Pedestrian Request Logic             | Request Handling                             |    ⬜   |
+| **15** | Next-State Logic                     | Combinational FSM Logic                      |    DONE   |
+| **16** | Output Logic                         | Moore Output Decoder                         |    DONE   |
+| **17** | Emergency Priority Logic             | Priority Decision Logic                      |    DONE   |
+| **18** | Pedestrian Request Logic             | Request Handling                             |    DONE   |
 | **19** | Top Module Integration               | RTL Integration                              |    ⬜   |
 | **20** | Complete Testbench                   | Functional Verification                      |    ⬜   |
 | **21** | Waveform Analysis                    | GTKWave Debugging                            |    ⬜   |
@@ -59,6 +59,8 @@ The design also supports:
 | **23** | Documentation                        | State Diagram, Timing Diagram, Block Diagram |    ⬜   |
 | **24** | GitHub Repository                    | README, Project Structure                    |    ⬜   |
 | **25** | LinkedIn Project Post                | Portfolio Showcase                           |    ⬜   |
+
+NOTE : Phase 17 and 18 is implemented in next state logic only so no need of seperate logic file for phase 17 and 18
 
 ## Directory Structure
 
