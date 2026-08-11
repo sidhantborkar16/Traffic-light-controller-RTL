@@ -54,7 +54,7 @@ The design also supports:
 | **16** | Output Logic                         | Moore Output Decoder                         |    DONE   |
 | **17** | Emergency Priority Logic             | Priority Decision Logic                      |    DONE   |
 | **18** | Pedestrian Request Logic             | Request Handling                             |    DONE   |
-| **19** | Top Module Integration               | RTL Integration                              |    ⬜   |
+| **19** | Top Module Integration               | RTL Integration                              |    DONE   |
 | **20** | Complete Testbench                   | Functional Verification                      |    ⬜   |
 | **21** | Waveform Analysis                    | GTKWave Debugging                            |    ⬜   |
 | **22** | Corner Case Testing                  | Reset, Multiple Requests, Timing             |    ⬜   |
