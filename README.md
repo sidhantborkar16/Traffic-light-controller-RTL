@@ -23,11 +23,11 @@ The project was developed phase-by-phase, starting from system requirements and 
 * [State Table](#state-table)
 * [State Transition Table](#state-transition-table)
 * [Output Truth Table](#output-truth-table)
-* [Timing Specification](#timing-specification)
 * [Module-Wise Interface](#module-wise-interface)
 * [Emergency Priority Logic](#emergency-priority-logic)
 * [Pedestrian Request Handling](#pedestrian-request-handling)
 * [Verification](#verification)
+* [Simulation](#simulation)
 * [Development Flow](#development-flow)
 * [Repository Structure](#repository-structure)
 * [Tools Used](#tools-used)
@@ -149,25 +149,6 @@ The controller uses a **10-state Moore FSM** with 4-bit binary state encoding.
 <p align="center">
   <img src="Images/state_diagram.jpeg" alt="Traffic Light Controller State Diagram">
 </p>
-
-### Normal State Sequence
-
-```text
-S0 → S1 → S2 → S5 → S6 → S7 → S0
-```
-
-### Pedestrian Paths
-
-```text
-S2 → S3 → S5
-
-S7 → S8 → S0
-```
-
-### Emergency Paths
-
-Emergency requests can redirect the controller from the normal sequence to the corresponding emergency state.
-
 ---
 
 # RTL Architecture
@@ -353,20 +334,6 @@ The output logic is a Moore decoder, so the outputs depend only on the current s
 
 ---
 
-# Timing Specification
-
-The timer duration depends on the current FSM state.
-
-| Function        | Target Count |
-| --------------- | -----------: |
-| Green           |           30 |
-| Yellow          |            5 |
-| All Red         |            2 |
-| Pedestrian Walk |            8 |
-| Emergency       |           10 |
-
----
-
 # Module-Wise Interface
 
 | Module                     | Inputs                                                                                    | Outputs                        |
@@ -397,39 +364,6 @@ flowchart TD
     E --> I{Emergency Complete?}
     I -->|Yes| H
 ```
-
-### NS Emergency
-
-When `emergency_NS = 1`:
-
-```text
-Any Normal State → S4
-```
-
-`S4` remains active while the NS emergency request is active.
-
-After the emergency timer completes and `emergency_NS = 0`:
-
-```text
-S4 → S0
-```
-
-### EW Emergency
-
-When `emergency_NS = 0` and `emergency_EW = 1`:
-
-```text
-Any Normal State → S9
-```
-
-`S9` remains active while the EW emergency request is active.
-
-After the emergency timer completes and `emergency_EW = 0`:
-
-```text
-S9 → S0
-```
-
 ---
 
 # Pedestrian Request Handling
@@ -449,36 +383,6 @@ flowchart LR
 
 The NS pedestrian request is evaluated after the NS traffic sequence reaches `S2`.
 
-If:
-
-```text
-ped_req_NS = 1
-```
-
-the controller enters:
-
-```text
-S3 = WALK_NS
-```
-
-After the pedestrian timer completes:
-
-```text
-S3 → S5
-```
-
-If:
-
-```text
-ped_req_NS = 0
-```
-
-the controller skips `S3`:
-
-```text
-S2 → S5
-```
-
 ## East-West Pedestrian Request
 
 ```mermaid
@@ -489,36 +393,7 @@ flowchart LR
     D --> E[S0 NS_GREEN]
     C -->|ped_req_EW = 0| E
 ```
-
-If:
-
-```text
-ped_req_EW = 1
-```
-
-the controller enters:
-
-```text
-S8 = WALK_EW
-```
-
-After the pedestrian timer completes:
-
-```text
-S8 → S0
-```
-
-If:
-
-```text
-ped_req_EW = 0
-```
-
-the controller directly transitions:
-
-```text
-S7 → S0
-```
+The EW pedestrian request is evaluated after the EW traffic sequence reaches `S7`.
 
 ---
 
@@ -568,6 +443,26 @@ Individual verification results for the Timer, State Register, Next-State Logic,
 
 Check the **`Images/` folder** for the block-wise verification waveforms and results.
 
+---
+# Simulation
+
+The RTL design can be compiled and simulated using **Icarus Verilog** and the generated waveform can be analyzed using **GTKWave**.
+
+## Compile
+
+```bash
+iverilog -o sim/traffic_light_controller.out rtl/traffic_light_controller.v rtl/timer.v rtl/state_register.v rtl/output_logic.v rtl/next_state_logic.v tb/traffic_light_controller_TB.v
+```
+### Run Simulation
+
+```bash 
+vvp sim/traffic_light_controller.out
+```
+#### Open GTKWave
+
+```bash
+gtkwave wave/traffic_light_controller.vcd
+```
 ---
 
 # Development Flow
