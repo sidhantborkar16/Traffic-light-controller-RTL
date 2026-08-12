@@ -24,7 +24,6 @@ The project was developed phase-by-phase, starting from system requirements and 
 * [State Transition Table](#state-transition-table)
 * [Output Truth Table](#output-truth-table)
 * [Timing Specification](#timing-specification)
-* [RTL Modules](#rtl-modules)
 * [Module-Wise Interface](#module-wise-interface)
 * [Emergency Priority Logic](#emergency-priority-logic)
 * [Pedestrian Request Handling](#pedestrian-request-handling)
@@ -365,91 +364,6 @@ The timer duration depends on the current FSM state.
 | All Red         |            2 |
 | Pedestrian Walk |            8 |
 | Emergency       |           10 |
-
-### State Timing
-
-| State | Name           | Target Count |
-| ----- | -------------- | -----------: |
-| `S0`  | `NS_GREEN`     |           30 |
-| `S1`  | `NS_YELLOW`    |            5 |
-| `S2`  | `ALL_RED_NS`   |            2 |
-| `S3`  | `WALK_NS`      |            8 |
-| `S4`  | `EMERGENCY_NS` |           10 |
-| `S5`  | `EW_GREEN`     |           30 |
-| `S6`  | `EW_YELLOW`    |            5 |
-| `S7`  | `ALL_RED_EW`   |            2 |
-| `S8`  | `WALK_EW`      |            8 |
-| `S9`  | `EMERGENCY_EW` |           10 |
-
-When:
-
-```text
-timer_done = 0
-```
-
-the controller remains in the current state.
-
-When:
-
-```text
-timer_done = 1
-```
-
-the next-state logic evaluates the appropriate transition.
-
----
-
-# RTL Modules
-
-## `timer.v`
-
-Responsible for:
-
-* Clock-based counting
-* Reset handling
-* Timer clearing
-* Target count comparison
-* Generating `timer_done`
-* Providing `timer_count`
-
-## `state_register.v`
-
-Responsible for:
-
-* Storing the current FSM state
-* Updating the state on the clock edge
-* Reset handling
-
-## `next_state_logic.v`
-
-Responsible for:
-
-* Normal FSM transitions
-* Emergency priority
-* Pedestrian request handling
-* Timer-based transitions
-* Safe/default state handling
-
-## `output_logic.v`
-
-Responsible for:
-
-* Moore output decoding
-* NS traffic signals
-* EW traffic signals
-* NS pedestrian signals
-* EW pedestrian signals
-* Safe/default output handling
-
-## `traffic_light_controller.v`
-
-The top-level integration module responsible for:
-
-* Instantiating the RTL blocks
-* Connecting internal signals
-* Selecting timer target counts
-* Integrating the complete controller
-* Providing the external interface
 
 ---
 
