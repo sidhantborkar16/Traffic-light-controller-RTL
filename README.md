@@ -10,7 +10,7 @@ The controller manages traffic signals for a two-way intersection between **Nort
 
 The project was developed phase-by-phase, starting from system requirements and FSM design and progressing through RTL implementation, module-level verification, top-level integration, waveform analysis, and final functional verification.
 
-Note: Phase 2 of this project is under developement you can check the planning PDF in phase 2 folder. all the updates regarding to phase 2 will be uploded in that folder only.
+Note: Phase 2 of this project is under developement you can check the planning PDF in phase 2 folder. all the updates regarding phase 2 will be uploded in that folder only.
 
 ---
 
