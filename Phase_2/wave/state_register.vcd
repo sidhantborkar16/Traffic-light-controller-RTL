@@ -1,0 +1,171 @@
+$date
+	Tue Aug 18 13:16:33 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module state_register_tb $end
+$var wire 5 ! current_state [4:0] $end
+$var parameter 5 " S0 $end
+$var parameter 5 # S1 $end
+$var parameter 5 $ S10 $end
+$var parameter 5 % S11 $end
+$var parameter 5 & S12 $end
+$var parameter 5 ' S13 $end
+$var parameter 5 ( S14 $end
+$var parameter 5 ) S15 $end
+$var parameter 5 * S16 $end
+$var parameter 5 + S17 $end
+$var parameter 5 , S18 $end
+$var parameter 5 - S19 $end
+$var parameter 5 . S2 $end
+$var parameter 5 / S3 $end
+$var parameter 5 0 S4 $end
+$var parameter 5 1 S5 $end
+$var parameter 5 2 S6 $end
+$var parameter 5 3 S7 $end
+$var parameter 5 4 S8 $end
+$var parameter 5 5 S9 $end
+$var reg 1 6 clk $end
+$var reg 5 7 next_state [4:0] $end
+$var reg 1 8 reset $end
+$scope module dut $end
+$var wire 1 6 clk $end
+$var wire 5 9 next_state [4:0] $end
+$var wire 1 8 reset $end
+$var parameter 5 : S0 $end
+$var parameter 5 ; S1 $end
+$var parameter 5 < S10 $end
+$var parameter 5 = S11 $end
+$var parameter 5 > S12 $end
+$var parameter 5 ? S13 $end
+$var parameter 5 @ S14 $end
+$var parameter 5 A S15 $end
+$var parameter 5 B S16 $end
+$var parameter 5 C S17 $end
+$var parameter 5 D S18 $end
+$var parameter 5 E S19 $end
+$var parameter 5 F S2 $end
+$var parameter 5 G S3 $end
+$var parameter 5 H S4 $end
+$var parameter 5 I S5 $end
+$var parameter 5 J S6 $end
+$var parameter 5 K S7 $end
+$var parameter 5 L S8 $end
+$var parameter 5 M S9 $end
+$var reg 5 N current_state [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1001 M
+b1000 L
+b111 K
+b110 J
+b101 I
+b100 H
+b11 G
+b10 F
+b10011 E
+b10010 D
+b10001 C
+b10000 B
+b1111 A
+b1110 @
+b1101 ?
+b1100 >
+b1011 =
+b1010 <
+b1 ;
+b0 :
+b1001 5
+b1000 4
+b111 3
+b110 2
+b101 1
+b100 0
+b11 /
+b10 .
+b10011 -
+b10010 ,
+b10001 +
+b10000 *
+b1111 )
+b1110 (
+b1101 '
+b1100 &
+b1011 %
+b1010 $
+b1 #
+b0 "
+$end
+#0
+$dumpvars
+bx N
+bx 9
+x8
+bx 7
+06
+bx !
+$end
+#5000
+b0 !
+b0 N
+b1010 7
+b1010 9
+18
+16
+#10000
+06
+#15000
+16
+#20000
+08
+06
+#25000
+b110 !
+b110 N
+b110 7
+b110 9
+16
+#30000
+06
+#35000
+b1111 !
+b1111 N
+b1111 7
+b1111 9
+16
+#38000
+b101 7
+b101 9
+#40000
+06
+#45000
+b101 !
+b101 N
+16
+#50000
+06
+#55000
+b10000 !
+b10000 N
+b10000 7
+b10000 9
+16
+#60000
+06
+#65000
+16
+#70000
+06
+#75000
+16
+#80000
+06
+#85000
+16
