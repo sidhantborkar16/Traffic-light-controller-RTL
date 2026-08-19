@@ -1,0 +1,202 @@
+$date
+	Wed Aug 19 14:21:11 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module next_state_tb $end
+$var wire 5 ! next_state [4:0] $end
+$var parameter 5 " S0 $end
+$var parameter 5 # S1 $end
+$var parameter 5 $ S10 $end
+$var parameter 5 % S11 $end
+$var parameter 5 & S12 $end
+$var parameter 5 ' S13 $end
+$var parameter 5 ( S14 $end
+$var parameter 5 ) S15 $end
+$var parameter 5 * S16 $end
+$var parameter 5 + S17 $end
+$var parameter 5 , S18 $end
+$var parameter 5 - S19 $end
+$var parameter 5 . S2 $end
+$var parameter 5 / S3 $end
+$var parameter 5 0 S4 $end
+$var parameter 5 1 S5 $end
+$var parameter 5 2 S6 $end
+$var parameter 5 3 S7 $end
+$var parameter 5 4 S8 $end
+$var parameter 5 5 S9 $end
+$var reg 5 6 current_state [4:0] $end
+$var reg 1 7 emergency_req_A $end
+$var reg 1 8 emergency_req_B $end
+$var reg 1 9 emergency_req_C $end
+$var reg 1 : emergency_req_D $end
+$var reg 1 ; ped_req_A $end
+$var reg 1 < ped_req_B $end
+$var reg 1 = ped_req_C $end
+$var reg 1 > ped_req_D $end
+$var reg 1 ? timer_done $end
+$scope module dut $end
+$var wire 5 @ current_state [4:0] $end
+$var wire 1 7 emergency_req_A $end
+$var wire 1 8 emergency_req_B $end
+$var wire 1 9 emergency_req_C $end
+$var wire 1 : emergency_req_D $end
+$var wire 1 ; ped_req_A $end
+$var wire 1 < ped_req_B $end
+$var wire 1 = ped_req_C $end
+$var wire 1 > ped_req_D $end
+$var wire 1 ? timer_done $end
+$var parameter 5 A S0 $end
+$var parameter 5 B S1 $end
+$var parameter 5 C S10 $end
+$var parameter 5 D S11 $end
+$var parameter 5 E S12 $end
+$var parameter 5 F S13 $end
+$var parameter 5 G S14 $end
+$var parameter 5 H S15 $end
+$var parameter 5 I S16 $end
+$var parameter 5 J S17 $end
+$var parameter 5 K S18 $end
+$var parameter 5 L S19 $end
+$var parameter 5 M S2 $end
+$var parameter 5 N S3 $end
+$var parameter 5 O S4 $end
+$var parameter 5 P S5 $end
+$var parameter 5 Q S6 $end
+$var parameter 5 R S7 $end
+$var parameter 5 S S8 $end
+$var parameter 5 T S9 $end
+$var reg 5 U next_state [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1001 T
+b1000 S
+b111 R
+b110 Q
+b101 P
+b100 O
+b11 N
+b10 M
+b10011 L
+b10010 K
+b10001 J
+b10000 I
+b1111 H
+b1110 G
+b1101 F
+b1100 E
+b1011 D
+b1010 C
+b1 B
+b0 A
+b1001 5
+b1000 4
+b111 3
+b110 2
+b101 1
+b100 0
+b11 /
+b10 .
+b10011 -
+b10010 ,
+b10001 +
+b10000 *
+b1111 )
+b1110 (
+b1101 '
+b1100 &
+b1011 %
+b1010 $
+b1 #
+b0 "
+$end
+#0
+$dumpvars
+b100 U
+b101 @
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+17
+b101 6
+b100 !
+$end
+#10000
+b1001 !
+b1001 U
+18
+07
+b1 6
+b1 @
+#20000
+b1110 !
+b1110 U
+19
+08
+b10000 6
+b10000 @
+#30000
+b111 !
+b111 U
+1;
+09
+1?
+b110 6
+b110 @
+#40000
+b1101 !
+b1101 U
+1=
+b1100 6
+b1100 @
+#50000
+b10010 !
+b10010 U
+1>
+b10001 6
+b10001 @
+#60000
+b0 !
+b0 U
+0>
+0=
+0;
+b10010 6
+b10010 @
+#70000
+b1010 !
+b1010 U
+b1000 6
+b1000 @
+#80000
+b0 !
+b0 U
+b1001 6
+b1001 @
+#90000
+b10011 6
+b10011 @
+#100000
+b110 !
+b110 U
+0?
+b110 6
+b110 @
+#110000
+b100 !
+b100 U
+b100 6
+b100 @
+#120000
